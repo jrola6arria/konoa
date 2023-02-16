@@ -16,9 +16,16 @@ public class KonoBat
         System.out.print("Sartu konoaren altuera: ");
         altuera = sarrera.nextDouble();
 
-        azalera = Math.PI * erradioa * erradioa + Math.PI * erradioa * Math.sqrt(altuera * altuera + erradioa * erradioa);
-        bolumena = Math.PI * erradioa * erradioa * altuera / 3;
-
-        System.out.printf("Konoaren azalera %.2f da eta bolumena %.2f\n",azalera,bolumena);
+        System.out.printf("Konoaren azalera %.2f da eta bolumena %.2f\n",azalera(erradioa,altuera),bolumena(erradioa,altuera));
     }
+	
+	private static double azalera(double erradioa,double altuera)
+	{
+		return Math.PI * erradioa * erradioa + Math.PI * erradioa * Math.sqrt(altuera * altuera + erradioa * erradioa);
+	}
+
+	private static double bolumena(double erradioa,double altuera)
+	{
+		return Math.PI * erradioa * erradioa * altuera / 3;
+	}
 }
