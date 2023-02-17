@@ -10,7 +10,7 @@ public class KonoBat
         double bolumena;
         Scanner sarrera = new Scanner(System.in);
 
-        System.out.print("Sartu konoaren erradioa: ");
+        System.out.print("sartu konoaren erradioa: ");
         erradioa = sarrera.nextDouble();
 
         System.out.print("Sartu konoaren altuera: ");
